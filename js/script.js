@@ -1,9 +1,6 @@
 const firstName = prompt("What's your first name?");
-console.log(firstName);
 const lastName = prompt("What's your last name?");
-console.log(lastName);
 const favColor = prompt("What's your favorite color?");
-console.log(favColor);
 
 console.log(
 	`	
@@ -13,10 +10,7 @@ console.log(
 	`
 );
 
-let psw = (
-	`
-		${firstName}${lastName}${favColor}21
-	`
-);
+let psw = firstName + lastName + favColor + 21;
+console.log(psw);
 
-document.getElementById("psw").innerHTML = psw;
+document.getElementById("my-psw").innerHTML = psw;
